@@ -549,6 +549,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -565,6 +567,8 @@
 				<string>AirportItlwm.kext</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -581,6 +585,8 @@
 				<string>IntelBluetoothFirmware.kext</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
