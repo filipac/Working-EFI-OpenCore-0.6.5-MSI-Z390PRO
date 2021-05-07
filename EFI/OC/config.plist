@@ -652,7 +652,7 @@
 				<key>Comment</key>
 				<string>CPU Optimisation</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string></string>
 				<key>MaxKernel</key>
