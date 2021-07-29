@@ -379,6 +379,8 @@
 				<false />
 				<key>ResetLogoStatus</key>
 				<false />
+				<key>SyncTableIds</key>
+				<false />
 			</dict>
 		</dict>
 		<key>Booter</key>
@@ -476,6 +478,24 @@
 					<true />
 					<key>ExecutablePath</key>
 					<string>Contents/MacOS/Lilu</string>
+					<key>MaxKernel</key>
+					<string></string>
+					<key>MinKernel</key>
+					<string></string>
+					<key>PlistPath</key>
+					<string>Contents/Info.plist</string>
+				</dict>
+				<dict>
+					<key>Arch</key>
+					<string>Any</string>
+					<key>BundlePath</key>
+					<string>BlueToolFixup.kext</string>
+					<key>Comment</key>
+					<string>Patch engine</string>
+					<key>Enabled</key>
+					<true />
+					<key>ExecutablePath</key>
+					<string>Contents/MacOS/BlueToolFixup</string>
 					<key>MaxKernel</key>
 					<string></string>
 					<key>MinKernel</key>
@@ -595,13 +615,13 @@
 					<key>Arch</key>
 					<string>Any</string>
 					<key>BundlePath</key>
-					<string>IntelMausiEthernet.kext</string>
+					<string>IntelMausi.kext</string>
 					<key>Comment</key>
 					<string>Intel Ethernet LAN</string>
 					<key>Enabled</key>
 					<true />
 					<key>ExecutablePath</key>
-					<string>Contents/MacOS/IntelMausiEthernet</string>
+					<string>Contents/MacOS/IntelMausi</string>
 					<key>MaxKernel</key>
 					<string></string>
 					<key>MinKernel</key>
@@ -615,7 +635,7 @@
 					<key>BundlePath</key>
 					<string>AirportItlwm.kext</string>
 					<key>Comment</key>
-					<string></string>
+					<string>AirportItlwm</string>
 					<key>Enabled</key>
 					<true />
 					<key>ExecutablePath</key>
@@ -707,7 +727,7 @@
 					<key>Comment</key>
 					<string>CPU Optimisation</string>
 					<key>Enabled</key>
-					<true />
+					<false />
 					<key>ExecutablePath</key>
 					<string></string>
 					<key>MaxKernel</key>
@@ -877,6 +897,8 @@
 			</dict>
 			<key>Scheme</key>
 			<dict>
+				<key>CustomKernel</key>
+				<false />
 				<key>FuzzyMatch</key>
 				<false />
 				<key>KernelArch</key>
