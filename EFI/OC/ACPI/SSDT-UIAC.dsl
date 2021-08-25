@@ -1,4 +1,4 @@
-DefinitionBlock ("", "SSDT", 2, "hack", "_UIAC", 0)
+DefinitionBlock ("", "SSDT", 2, "ACDT", "_UIAC", 0)
 {
     Device(UIAC)
     {
@@ -9,103 +9,84 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_UIAC", 0)
             // XHC (8086_a36d)
             "XHC", Package()
             {
-                "port-count", Buffer() { 0x1A, 0x00, 0x00, 0x00 },
+                "port-count", Buffer() { 0x14, 0x00, 0x00, 0x00 },
                 "ports", Package()
                 {
-                      "HS05", Package()
+                      "HS02", Package()
                       {
+                          "name", Buffer() { "HS02" },
                           "UsbConnector", 3,
-                          "port", Buffer() { 0x05, 0x00, 0x00, 0x00 },
-                      },
-                      "HS08", Package()
-                      {
-                          "UsbConnector", 3,
-                          "port", Buffer() { 0x08, 0x00, 0x00, 0x00 },
-                      },
-                      "HS04", Package()
-                      {
-                          "UsbConnector", 3,
-                          "port", Buffer() { 0x04, 0x00, 0x00, 0x00 },
-                      },
-                      "HS10", Package()
-                      {
-                          "UsbConnector", 3,
-                          "port", Buffer() { 0x0A, 0x00, 0x00, 0x00 },
-                      },
-                      "HS14", Package()
-                      {
-                          "UsbConnector", 3,
-                          "port", Buffer() { 0x0E, 0x00, 0x00, 0x00 },
-                      },
-                      "SS09", Package()
-                      {
-                          "UsbConnector", 3,
-                          "port", Buffer() { 0x19, 0x00, 0x00, 0x00 },
-                      },
-                      "HS13", Package()
-                      {
-                          "UsbConnector", 3,
-                          "port", Buffer() { 0x0D, 0x00, 0x00, 0x00 },
+                          "port", Buffer() { 0x02, 0x00, 0x00, 0x00 },
+                          "Comment", Buffer() { "sub usb alb spate" },
                       },
                       "HS03", Package()
                       {
+                          "name", Buffer() { "HS03" },
                           "UsbConnector", 3,
                           "port", Buffer() { 0x03, 0x00, 0x00, 0x00 },
+                          "Comment", Buffer() { "usb alb spate" },
                       },
-                      "HS07", Package()
+                      "HS04", Package()
                       {
+                          "name", Buffer() { "HS04" },
                           "UsbConnector", 3,
-                          "port", Buffer() { 0x07, 0x00, 0x00, 0x00 },
+                          "port", Buffer() { 0x04, 0x00, 0x00, 0x00 },
+                          "Comment", Buffer() { "usb-c" },
                       },
-                      "SS04", Package()
+                      "HS05", Package()
                       {
+                          "name", Buffer() { "HS05" },
                           "UsbConnector", 3,
-                          "port", Buffer() { 0x14, 0x00, 0x00, 0x00 },
-                      },
-                      "SS08", Package()
-                      {
-                          "UsbConnector", 3,
-                          "port", Buffer() { 0x18, 0x00, 0x00, 0x00 },
-                      },
-                      "SS10", Package()
-                      {
-                          "UsbConnector", 3,
-                          "port", Buffer() { 0x1A, 0x00, 0x00, 0x00 },
-                      },
-                      "HS12", Package()
-                      {
-                          "UsbConnector", 3,
-                          "port", Buffer() { 0x0C, 0x00, 0x00, 0x00 },
-                      },
-                      "HS02", Package()
-                      {
-                          "UsbConnector", 3,
-                          "port", Buffer() { 0x02, 0x00, 0x00, 0x00 },
+                          "port", Buffer() { 0x05, 0x00, 0x00, 0x00 },
+                          "Comment", Buffer() { "fata" },
                       },
                       "HS06", Package()
                       {
+                          "name", Buffer() { "HS06" },
                           "UsbConnector", 3,
                           "port", Buffer() { 0x06, 0x00, 0x00, 0x00 },
+                          "Comment", Buffer() { "fata" },
                       },
-                      "SS03", Package()
+                      "HS07", Package()
                       {
-                          "UsbConnector", 3,
-                          "port", Buffer() { 0x13, 0x00, 0x00, 0x00 },
+                          "name", Buffer() { "HS07" },
+                          "UsbConnector", 255,
+                          "port", Buffer() { 0x07, 0x00, 0x00, 0x00 },
+                          "Comment", Buffer() { "bluetooth internal" },
                       },
-                      "SS07", Package()
+                      "HS08", Package()
                       {
+                          "name", Buffer() { "HS08" },
                           "UsbConnector", 3,
-                          "port", Buffer() { 0x17, 0x00, 0x00, 0x00 },
+                          "port", Buffer() { 0x08, 0x00, 0x00, 0x00 },
+                          "Comment", Buffer() { "spate" },
                       },
                       "HS09", Package()
                       {
+                          "name", Buffer() { "HS09" },
                           "UsbConnector", 3,
                           "port", Buffer() { 0x09, 0x00, 0x00, 0x00 },
+                          "Comment", Buffer() { "spate sus stanga" },
                       },
-                      "HS11", Package()
+                      "HS10", Package()
                       {
+                          "name", Buffer() { "HS10" },
                           "UsbConnector", 3,
-                          "port", Buffer() { 0x0B, 0x00, 0x00, 0x00 },
+                          "port", Buffer() { 0x0A, 0x00, 0x00, 0x00 },
+                          "Comment", Buffer() { "spate sus dreapta" },
+                      },
+                      "SS03", Package()
+                      {
+                          "name", Buffer() { "SS03" },
+                          "UsbConnector", 3,
+                          "port", Buffer() { 0x13, 0x00, 0x00, 0x00 },
+                      },
+                      "SS04", Package()
+                      {
+                          "name", Buffer() { "SS04" },
+                          "UsbConnector", 10,
+                          "port", Buffer() { 0x14, 0x00, 0x00, 0x00 },
+                          "Comment", Buffer() { "usb-c" },
                       },
                 },
             },
