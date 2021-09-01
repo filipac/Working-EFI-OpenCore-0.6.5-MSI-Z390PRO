@@ -547,7 +547,7 @@
 					<key>Comment</key>
 					<string>Patch nvme ssd</string>
 					<key>Enabled</key>
-					<true />
+					<false />
 					<key>ExecutablePath</key>
 					<string>Contents/MacOS/NVMeFix</string>
 					<key>MaxKernel</key>
@@ -1009,7 +1009,7 @@
 				<key>ScanPolicy</key>
 				<integer>0</integer>
 				<key>SecureBootModel</key>
-				<string>Default</string>
+				<string>x86legacy</string>
 				<key>Vault</key>
 				<string>Optional</string>
 			</dict>
@@ -1179,6 +1179,8 @@
 				<integer>1</integer>
 				<key>PointerSpeedMul</key>
 				<integer>1</integer>
+				<key>GraphicsInputMirroring</key>
+				<true />
 			</dict>
 			<key>Audio</key>
 			<dict>
