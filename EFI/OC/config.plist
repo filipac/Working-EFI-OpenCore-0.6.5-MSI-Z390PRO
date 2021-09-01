@@ -16,6 +16,14 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
+					<string>SSDT-EC</string>
+					<key>Enabled</key>
+					<true/>
+					<key>Path</key>
+					<string>SSDT-EC.aml</string>
+				</dict>
+				<dict>
+					<key>Comment</key>
 					<string>Fix EC and USB Power</string>
 					<key>Enabled</key>
 					<true />
@@ -58,7 +66,7 @@
 					<key>Comment</key>
 					<string>USB Ports for ASUS Rog Strix z390i &amp; NZXT H200i</string>
 					<key>Enabled</key>
-					<true />
+					<false />
 					<key>Path</key>
 					<string>SSDT-UIAC.aml</string>
 				</dict>
@@ -106,25 +114,35 @@
 					<key>Count</key>
 					<integer>0</integer>
 					<key>Enabled</key>
-					<true />
+					<true/>
 					<key>Find</key>
-					<data>X0NSUwigGQ==</data>
+					<data>
+					JV9DUlM=
+					</data>
 					<key>Limit</key>
 					<integer>0</integer>
 					<key>Mask</key>
-					<data></data>
+					<data>
+					</data>
 					<key>OemTableId</key>
-					<data>AAAAAA==</data>
+					<data>
+					AAAAAA==
+					</data>
 					<key>Replace</key>
-					<data>WENSUwigGQ==</data>
+					<data>
+					JVhDUlM=
+					</data>
 					<key>ReplaceMask</key>
-					<data></data>
+					<data>
+					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>TableSignature</key>
-					<data></data>
+					<data>
+					AAAAAA==
+					</data>
 				</dict>
 				<dict>
 					<key>Base</key>
@@ -136,25 +154,35 @@
 					<key>Count</key>
 					<integer>0</integer>
 					<key>Enabled</key>
-					<true />
+					<true/>
 					<key>Find</key>
-					<data>IgABeQA=</data>
+					<data>
+					IgABeQA=
+					</data>
 					<key>Limit</key>
 					<integer>0</integer>
 					<key>Mask</key>
-					<data></data>
+					<data>
+					</data>
 					<key>OemTableId</key>
-					<data>AAAAAA==</data>
+					<data>
+					AAAAAA==
+					</data>
 					<key>Replace</key>
-					<data>IgAAeQA=</data>
+					<data>
+					IgAAeQA=
+					</data>
 					<key>ReplaceMask</key>
-					<data></data>
+					<data>
+					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>TableSignature</key>
-					<data></data>
+					<data>
+					AAAAAA==
+					</data>
 				</dict>
 				<dict>
 					<key>Base</key>
@@ -166,205 +194,35 @@
 					<key>Count</key>
 					<integer>0</integer>
 					<key>Enabled</key>
-					<true />
+					<true/>
 					<key>Find</key>
-					<data>IgEAeQA=</data>
+					<data>
+					IgEAeQA=
+					</data>
 					<key>Limit</key>
 					<integer>0</integer>
 					<key>Mask</key>
-					<data></data>
+					<data>
+					</data>
 					<key>OemTableId</key>
-					<data>AAAAAA==</data>
+					<data>
+					AAAAAA==
+					</data>
 					<key>Replace</key>
-					<data>IgAAeQA=</data>
+					<data>
+					IgAAeQA=
+					</data>
 					<key>ReplaceMask</key>
-					<data></data>
+					<data>
+					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>TableSignature</key>
-					<data></data>
-				</dict>
-				<dict>
-					<key>Base</key>
-					<string></string>
-					<key>BaseSkip</key>
-					<integer>0</integer>
-					<key>Comment</key>
-					<string>IPIC IRQ 2 Patch</string>
-					<key>Count</key>
-					<integer>0</integer>
-					<key>Enabled</key>
-					<true />
-					<key>Find</key>
-					<data>IgQAeQA=</data>
-					<key>Limit</key>
-					<integer>0</integer>
-					<key>Mask</key>
-					<data></data>
-					<key>OemTableId</key>
-					<data>AAAAAA==</data>
-					<key>Replace</key>
-					<data>IgAAeQA=</data>
-					<key>ReplaceMask</key>
-					<data></data>
-					<key>Skip</key>
-					<integer>0</integer>
-					<key>TableLength</key>
-					<integer>0</integer>
-					<key>TableSignature</key>
-					<data></data>
-				</dict>
-				<dict>
-					<key>Base</key>
-					<string></string>
-					<key>BaseSkip</key>
-					<integer>0</integer>
-					<key>Comment</key>
-					<string>_PTS to ZPTS</string>
-					<key>Count</key>
-					<integer>1</integer>
-					<key>Enabled</key>
-					<true />
-					<key>Find</key>
-					<data>X1BUUw==</data>
-					<key>Limit</key>
-					<integer>0</integer>
-					<key>Mask</key>
-					<data></data>
-					<key>OemTableId</key>
-					<data></data>
-					<key>Replace</key>
-					<data>WlBUUw==</data>
-					<key>ReplaceMask</key>
-					<data></data>
-					<key>Skip</key>
-					<integer>0</integer>
-					<key>TableLength</key>
-					<integer>0</integer>
-					<key>TableSignature</key>
-					<data></data>
-				</dict>
-				<dict>
-					<key>Base</key>
-					<string></string>
-					<key>BaseSkip</key>
-					<integer>0</integer>
-					<key>Comment</key>
-					<string>Fix 300-series RTC Bugs</string>
-					<key>Count</key>
-					<integer>1</integer>
-					<key>Enabled</key>
-					<true />
-					<key>Find</key>
-					<data>oAqTU1RBUwE=</data>
-					<key>Limit</key>
-					<integer>0</integer>
-					<key>Mask</key>
-					<data></data>
-					<key>OemTableId</key>
-					<data></data>
-					<key>Replace</key>
-					<data>oAqRCv8L//8=</data>
-					<key>ReplaceMask</key>
-					<data></data>
-					<key>Skip</key>
-					<integer>0</integer>
-					<key>TableLength</key>
-					<integer>0</integer>
-					<key>TableSignature</key>
-					<data></data>
-				</dict>
-				<dict>
-					<key>Base</key>
-					<string></string>
-					<key>BaseSkip</key>
-					<integer>0</integer>
-					<key>Comment</key>
-					<string>SAT0 to SATA</string>
-					<key>Count</key>
-					<integer>0</integer>
-					<key>Enabled</key>
-					<true />
-					<key>Find</key>
-					<data>U0FUMA==</data>
-					<key>Limit</key>
-					<integer>0</integer>
-					<key>Mask</key>
-					<data></data>
-					<key>OemTableId</key>
-					<data></data>
-					<key>Replace</key>
-					<data>U0FUQQ==</data>
-					<key>ReplaceMask</key>
-					<data></data>
-					<key>Skip</key>
-					<integer>0</integer>
-					<key>TableLength</key>
-					<integer>0</integer>
-					<key>TableSignature</key>
-					<data>RFNEVA==</data>
-				</dict>
-				<dict>
-					<key>Base</key>
-					<string></string>
-					<key>BaseSkip</key>
-					<integer>0</integer>
-					<key>Comment</key>
-					<string>_Q11 to XQ11</string>
-					<key>Count</key>
-					<integer>1</integer>
-					<key>Enabled</key>
-					<false />
-					<key>Find</key>
-					<data>X1ExMQ==</data>
-					<key>Limit</key>
-					<integer>0</integer>
-					<key>Mask</key>
-					<data></data>
-					<key>OemTableId</key>
-					<data></data>
-					<key>Replace</key>
-					<data>WFExMQ==</data>
-					<key>ReplaceMask</key>
-					<data></data>
-					<key>Skip</key>
-					<integer>0</integer>
-					<key>TableLength</key>
-					<integer>0</integer>
-					<key>TableSignature</key>
-					<data></data>
-				</dict>
-				<dict>
-					<key>Base</key>
-					<string></string>
-					<key>BaseSkip</key>
-					<integer>0</integer>
-					<key>Comment</key>
-					<string>_Q12 to XQ12</string>
-					<key>Count</key>
-					<integer>1</integer>
-					<key>Enabled</key>
-					<false />
-					<key>Find</key>
-					<data>X1ExMg==</data>
-					<key>Limit</key>
-					<integer>0</integer>
-					<key>Mask</key>
-					<data></data>
-					<key>OemTableId</key>
-					<data></data>
-					<key>Replace</key>
-					<data>WFExMg==</data>
-					<key>ReplaceMask</key>
-					<data></data>
-					<key>Skip</key>
-					<integer>0</integer>
-					<key>TableLength</key>
-					<integer>0</integer>
-					<key>TableSignature</key>
-					<data></data>
+					<data>
+					AAAAAA==
+					</data>
 				</dict>
 			</array>
 			<key>Quirks</key>
