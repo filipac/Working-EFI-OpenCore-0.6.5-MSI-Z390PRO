@@ -18,7 +18,7 @@
 					<key>Comment</key>
 					<string>SSDT-EC</string>
 					<key>Enabled</key>
-					<true/>
+					<true />
 					<key>Path</key>
 					<string>SSDT-EC.aml</string>
 				</dict>
@@ -114,27 +114,25 @@
 					<key>Count</key>
 					<integer>0</integer>
 					<key>Enabled</key>
-					<true/>
+					<true />
 					<key>Find</key>
 					<data>
 					JV9DUlM=
-					</data>
+</data>
 					<key>Limit</key>
 					<integer>0</integer>
 					<key>Mask</key>
-					<data>
-					</data>
+					<data></data>
 					<key>OemTableId</key>
 					<data>
 					AAAAAA==
-					</data>
+</data>
 					<key>Replace</key>
 					<data>
 					JVhDUlM=
-					</data>
+</data>
 					<key>ReplaceMask</key>
-					<data>
-					</data>
+					<data></data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
@@ -142,7 +140,7 @@
 					<key>TableSignature</key>
 					<data>
 					AAAAAA==
-					</data>
+</data>
 				</dict>
 				<dict>
 					<key>Base</key>
@@ -154,27 +152,25 @@
 					<key>Count</key>
 					<integer>0</integer>
 					<key>Enabled</key>
-					<true/>
+					<true />
 					<key>Find</key>
 					<data>
 					IgABeQA=
-					</data>
+</data>
 					<key>Limit</key>
 					<integer>0</integer>
 					<key>Mask</key>
-					<data>
-					</data>
+					<data></data>
 					<key>OemTableId</key>
 					<data>
 					AAAAAA==
-					</data>
+</data>
 					<key>Replace</key>
 					<data>
 					IgAAeQA=
-					</data>
+</data>
 					<key>ReplaceMask</key>
-					<data>
-					</data>
+					<data></data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
@@ -182,7 +178,7 @@
 					<key>TableSignature</key>
 					<data>
 					AAAAAA==
-					</data>
+</data>
 				</dict>
 				<dict>
 					<key>Base</key>
@@ -194,27 +190,25 @@
 					<key>Count</key>
 					<integer>0</integer>
 					<key>Enabled</key>
-					<true/>
+					<true />
 					<key>Find</key>
 					<data>
 					IgEAeQA=
-					</data>
+</data>
 					<key>Limit</key>
 					<integer>0</integer>
 					<key>Mask</key>
-					<data>
-					</data>
+					<data></data>
 					<key>OemTableId</key>
 					<data>
 					AAAAAA==
-					</data>
+</data>
 					<key>Replace</key>
 					<data>
 					IgAAeQA=
-					</data>
+</data>
 					<key>ReplaceMask</key>
-					<data>
-					</data>
+					<data></data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
@@ -222,7 +216,7 @@
 					<key>TableSignature</key>
 					<data>
 					AAAAAA==
-					</data>
+</data>
 				</dict>
 			</array>
 			<key>Quirks</key>
@@ -405,7 +399,7 @@
 					<key>Comment</key>
 					<string>Patch nvme ssd</string>
 					<key>Enabled</key>
-					<false />
+					<true />
 					<key>ExecutablePath</key>
 					<string>Contents/MacOS/NVMeFix</string>
 					<key>MaxKernel</key>
@@ -567,7 +561,7 @@
 					<key>Comment</key>
 					<string>CPU Optimisation</string>
 					<key>Enabled</key>
-					<false />
+					<true />
 					<key>ExecutablePath</key>
 					<string>Contents/MacOS/CPUFriend</string>
 					<key>MaxKernel</key>
@@ -585,7 +579,7 @@
 					<key>Comment</key>
 					<string>CPU Optimisation</string>
 					<key>Enabled</key>
-					<false />
+					<true />
 					<key>ExecutablePath</key>
 					<string></string>
 					<key>MaxKernel</key>
@@ -776,7 +770,7 @@
 				<key>HibernateMode</key>
 				<string>None</string>
 				<key>HideAuxiliary</key>
-				<false />
+				<true />
 				<key>LauncherOption</key>
 				<string>Full</string>
 				<key>LauncherPath</key>
