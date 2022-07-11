@@ -66,7 +66,7 @@
 					<key>Comment</key>
 					<string>USB Ports for ASUS Rog Strix z390i &amp; NZXT H200i</string>
 					<key>Enabled</key>
-					<false />
+					<true />
 					<key>Path</key>
 					<string>SSDT-UIAC.aml</string>
 				</dict>
@@ -281,6 +281,8 @@
 				<false />
 				<key>SyncRuntimePermissions</key>
 				<true />
+				<key>ResizeAppleGpuBars</key>
+				<integer>-1</integer>
 			</dict>
 		</dict>
 		<key>DeviceProperties</key>
@@ -399,7 +401,7 @@
 					<key>Comment</key>
 					<string>Patch nvme ssd</string>
 					<key>Enabled</key>
-					<true />
+					<false />
 					<key>ExecutablePath</key>
 					<string>Contents/MacOS/NVMeFix</string>
 					<key>MaxKernel</key>
@@ -521,29 +523,11 @@
 					<key>Arch</key>
 					<string>Any</string>
 					<key>BundlePath</key>
-					<string>IntelBluetoothInjector.kext</string>
-					<key>Comment</key>
-					<string></string>
-					<key>Enabled</key>
-					<true />
-					<key>ExecutablePath</key>
-					<string>Contents/MacOS/IntelBluetoothInjector</string>
-					<key>MaxKernel</key>
-					<string></string>
-					<key>MinKernel</key>
-					<string></string>
-					<key>PlistPath</key>
-					<string>Contents/Info.plist</string>
-				</dict>
-				<dict>
-					<key>Arch</key>
-					<string>Any</string>
-					<key>BundlePath</key>
 					<string>USBPorts.kext</string>
 					<key>Comment</key>
 					<string>My USB map</string>
 					<key>Enabled</key>
-					<true />
+					<false />
 					<key>ExecutablePath</key>
 					<string></string>
 					<key>MaxKernel</key>
@@ -597,7 +581,7 @@
 					<key>Comment</key>
 					<string>Enable all USB Ports for debugging and creating custom USBPorts.kext</string>
 					<key>Enabled</key>
-					<false />
+					<true />
 					<key>ExecutablePath</key>
 					<string>Contents/MacOS/USBInjectAll</string>
 					<key>MaxKernel</key>
@@ -740,6 +724,8 @@
 				<true />
 				<key>PowerTimeoutKernelPanic</key>
 				<true />
+				<key>ProvideCurrentCpuInfo</key>
+				<false />
 				<key>SetApfsTrimTimeout</key>
 				<integer>-1</integer>
 				<key>ThirdPartyDrives</key>
@@ -861,7 +847,7 @@
 				<key>ScanPolicy</key>
 				<integer>0</integer>
 				<key>SecureBootModel</key>
-				<string>x86legacy</string>
+				<string>Default</string>
 				<key>Vault</key>
 				<string>Optional</string>
 			</dict>
@@ -887,6 +873,24 @@
 					<key>TextMode</key>
 					<false />
 				</dict>
+				<dict>
+					<key>Arguments</key>
+					<string></string>
+					<key>Auxiliary</key>
+					<false />
+					<key>Comment</key>
+					<string></string>
+					<key>Enabled</key>
+					<true />
+					<key>Name</key>
+					<string>Clean Nvram</string>
+					<key>Path</key>
+					<string>CleanNvram.efi</string>
+					<key>RealPath</key>
+					<false />
+					<key>TextMode</key>
+					<false />
+				</dict>
 			</array>
 		</dict>
 		<key>NVRAM</key>
@@ -897,19 +901,20 @@
 				<dict>
 					<key>DefaultBackgroundColor</key>
 					<data>v7+/AA==</data>
-					<key>UIScale</key>
-					<data>AQ==</data>
 				</dict>
 				<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 				<dict>
 					<key>SystemAudioVolume</key>
 					<data>Rg==</data>
+					<key>SystemAudioVolumeDB</key>
+					<data>4g==</data>
 					<key>ForceDisplayRotationInEFI</key>
 					<integer>0</integer>
 					<key>boot-args</key>
-					<string>debug=0x100 agdpmod=pikera alcid=1 itlwm_cc=RO unfairgva=1</string>
+					<string>debug=0x100 agdpmod=pikera alcid=1 itlwm_cc=RO unfairgva=1 shikigva=16</string>
 					<key>csr-active-config</key>
-					<data>/w8AAA==</data>
+					<data>AAAAAA==</data>
+					<!-- <data>/w8AAA==</data> -->
 					<key>prev-lang:kbd</key>
 					<string>en-US:0</string>
 				</dict>
@@ -918,7 +923,6 @@
 			<dict>
 				<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
 				<array>
-					<string>UIScale</string>
 					<string>DefaultBackgroundColor</string>
 				</array>
 				<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
@@ -973,7 +977,7 @@
 				<key>MaxBIOSVersion</key>
 				<false />
 				<key>MLB</key>
-				<string>C02042902J9LNV9JA</string>
+				<string>C02142100GU0000JC</string>
 				<key>ProcessorType</key>
 				<integer>0</integer>
 				<key>ROM</key>
@@ -983,11 +987,11 @@
 				<key>SystemMemoryStatus</key>
 				<string>Auto</string>
 				<key>SystemProductName</key>
-				<string>iMac19,1</string>
+				<string>iMac20,2</string>
 				<key>SystemSerialNumber</key>
-				<string>C02DKDZRJV3Q</string>
+				<string>C02GKGZY046M</string>
 				<key>SystemUUID</key>
-				<string>EF802128-452A-4A2C-AE86-976D011F2F7F</string>
+				<string>2E326087-8775-4975-A082-D5C4157C9FAE</string>
 			</dict>
 			<key>UpdateDataHub</key>
 			<true />
@@ -1027,6 +1031,12 @@
 				<integer>50</integer>
 				<key>KeySubsequentDelay</key>
 				<integer>5</integer>
+				<key>PointerPollMask</key>
+				<integer>-1</integer>
+				<key>PointerPollMax</key>
+				<integer>80</integer>
+				<key>PointerPollMin</key>
+				<integer>10</integer>
 				<key>PointerSpeedDiv</key>
 				<integer>1</integer>
 				<key>PointerSpeedMul</key>
@@ -1059,10 +1069,76 @@
 			<true />
 			<key>Drivers</key>
 			<array>
-				<string>OpenHfsPlus.efi</string>
-				<string>AudioDxe.efi</string>
-				<string>OpenCanopy.efi</string>
-				<string>OpenRuntime.efi</string>
+				<dict>
+					<key>Path</key>
+					<string>HfsPlus.efi</string>
+					<key>Comment</key>
+					<string>HFS+ Driver</string>
+					<key>Enabled</key>
+					<true />
+					<key>Arguments</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>Path</key>
+					<string>AudioDxe.efi</string>
+					<key>Comment</key>
+					<string></string>
+					<key>Enabled</key>
+					<true />
+					<key>Arguments</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>Path</key>
+					<string>OpenRuntime.efi</string>
+					<key>Comment</key>
+					<string></string>
+					<key>Enabled</key>
+					<true />
+					<key>Arguments</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>Path</key>
+					<string>OpenCanopy.efi</string>
+					<key>Comment</key>
+					<string></string>
+					<key>Enabled</key>
+					<true />
+					<key>Arguments</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>Path</key>
+					<string>btrfs_x64.efi</string>
+					<key>Comment</key>
+					<string></string>
+					<key>Enabled</key>
+					<false />
+					<key>Arguments</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>Path</key>
+					<string>ext4_x64.efi</string>
+					<key>Comment</key>
+					<string></string>
+					<key>Enabled</key>
+					<false />
+					<key>Arguments</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>Path</key>
+					<string>OpenLinuxBoot.efi</string>
+					<key>Comment</key>
+					<string></string>
+					<key>Enabled</key>
+					<false />
+					<key>Arguments</key>
+					<string></string>
+				</dict>
 			</array>
 			<key>Input</key>
 			<dict>
@@ -1099,6 +1175,8 @@
 				<false />
 				<key>ProvideConsoleGop</key>
 				<true />
+				<key>ReconnectGraphicsOnConnect</key>
+				<false />
 				<key>ReconnectOnResChange</key>
 				<false />
 				<key>ReplaceTabWithSpace</key>
@@ -1109,6 +1187,8 @@
 				<false />
 				<key>TextRenderer</key>
 				<string>BuiltinGraphics</string>
+				<key>UIScale</key>
+				<integer>0</integer>
 				<key>UgaPassThrough</key>
 				<false />
 			</dict>
@@ -1119,7 +1199,7 @@
 				<key>AppleBootPolicy</key>
 				<false />
 				<key>AppleDebugLog</key>
-				<false />
+				<true />
 				<key>AppleEg2Info</key>
 				<false />
 				<key>AppleFramebufferInfo</key>
@@ -1159,9 +1239,13 @@
 				<false />
 				<key>EnableVectorAcceleration</key>
 				<false />
+				<key>EnableVmx</key>
+				<false />
 				<key>ExitBootServicesDelay</key>
 				<integer>0</integer>
 				<key>ForgeUefiSupport</key>
+				<false />
+				<key>ForceOcWriteFlash</key>
 				<false />
 				<key>IgnoreInvalidFlexRatio</key>
 				<false />
@@ -1175,6 +1259,8 @@
 				<integer>0</integer>
 				<key>UnblockFsConnect</key>
 				<false />
+				<key>ResizeGpuBars</key>
+				<integer>-1</integer>
 			</dict>
 			<key>ReservedMemory</key>
 			<array />
